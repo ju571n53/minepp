@@ -2,6 +2,11 @@
 #define LOGINFORM_H
 
 #include <QDialog>
+#include <QLineEdit>
+#include <QGroupBox>
+#include <QVBoxLayout>
+#include <QGridLayout>
+#include <QPushButton>
 
 class LoginForm : public QDialog
 {
@@ -12,7 +17,13 @@ public:
     ~LoginForm();
     
 private:
-
+    QLineEdit *lineEditUsername;
+    QLineEdit *lineEditPassword;
+    QGroupBox *groupBoxIdentifiants;
+    QVBoxLayout *layout;
+    QGridLayout *layoutButtonsLogin;
+    QPushButton *pushButtonLogin;
+    QPushButton *pushButtonQuit;
 };
 
 #endif // LOGINFORM_H
